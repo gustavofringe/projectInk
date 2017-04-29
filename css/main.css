@@ -286,6 +286,7 @@ header #nav ul .dropdown {
   height: 100px;
   border-radius: 3px;
   background-color: aliceblue;
+  z-index: 3;
 }
 header #nav ul .dropdown li {
   list-style-type: none;
@@ -474,6 +475,19 @@ main .logo-home #logo {
   margin-top: 30px;
   width: 375px;
   height: 375px;
+}
+#contact footer h2 {
+  font-size: 14px;
+}
+#contact footer .link {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+#contact footer .link img {
+  width: 30px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
