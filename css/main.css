@@ -278,7 +278,7 @@ header #nav ul .dropdown {
   *menu dropdown
   **/
   position: absolute;
-  top: 45px;
+  top: 40px;
   right: 20px;
   margin: 0;
   padding: 0;
@@ -338,7 +338,7 @@ main {
 }
 main .logo-home {
   position: absolute;
-  top: 170px;
+  top: 200px;
   right: 0;
 }
 main .logo-home #logo {
@@ -590,6 +590,48 @@ footer .link img {
   font-size: 12px;
   color: #282eff;
   margin-bottom: 5px;
+}
+
+/*==================================================================
+##################### catalog page
+======================================================================*/
+#catalog .block {
+  margin-top: 65px;
+}
+#catalog .block .floor {
+  display: flex;
+}
+#catalog .block .floor section {
+  margin-top: 20px;
+  display: flex;
+  align-self: auto;
+}
+#catalog .block .floor section h2 {
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+#catalog .block .floor section figcaption {
+  font-size: 13px;
+}
+#catalog .block .floor section .price {
+  width: 80px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  color: #ff4e3d;
+}
+#catalog .block .floor section img {
+  width: 75px;
+  height: 75px;
+}
+#catalog .block .floor section .realisation {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#catalog .block .floor .none {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
