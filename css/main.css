@@ -303,7 +303,7 @@ header #nav ul .header__icon #header__icon {
   border-radius: 3px;
   background-color: #616161;
   width: 40px;
-  height: 35px;
+  height: 30px;
   cursor: pointer;
   position: absolute;
   top: 10px;
@@ -346,36 +346,62 @@ main .logo-home #logo {
   height: 100px;
 }
 
-/*
-*start of contact page
-*
-*/
-#contact {
+/*===================================================
+*footer for all page
+=====================================================*/
+footer h2 {
+  font-size: 14px;
+}
+footer .link {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+footer .link img {
+  width: 30px;
+  height: 30px;
+}
+
+/*===================================================================
+*header for contact blog & catalog
+=====================================================================*/
+#contact, #blog, #catalog {
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   /*
-  *center title
-  */
+*center title
+*/
 }
-#contact header h1 {
+#contact header h1, #blog header h1, #catalog header h1 {
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
 }
-#contact main {
+#contact main, #blog main, #catalog main {
   /*
   *
   *place logo
   */
 }
-#contact main .logo-home {
+#contact main .logo-home, #blog main .logo-home, #catalog main .logo-home {
   width: 100px;
   height: 100px;
   position: absolute;
   top: 0;
   left: 0;
 }
-#contact main .logo-home #logo {
+#contact main .logo-home #logo, #blog main .logo-home #logo, #catalog main .logo-home #logo {
   width: 100px;
   height: 100px;
 }
+
+/*=====================================================================
+*start of contact page
+*
+*=====================================================================*/
 #contact main form {
   /*
   *start form
@@ -476,18 +502,76 @@ main .logo-home #logo {
   width: 375px;
   height: 375px;
 }
-#contact footer h2 {
+
+/*=============================================================
+*start blog page
+===============================================================*/
+#blog .blog {
+  margin-top: 25px;
+  padding: 0 10px 0 10px;
+}
+#blog .blog .left, #blog .blog .right {
+  border-bottom: 1px solid grey;
+  height: 130px;
+  display: flex;
+}
+#blog .blog .left figure {
+  margin: 0;
+  padding: 0;
+}
+#blog .blog .left figure img {
+  width: 150px;
+  height: 150px;
+}
+#blog .blog .left .text {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 0 10px;
+}
+#blog .blog .left .text h2 {
   font-size: 14px;
 }
-#contact footer .link {
-  width: 200px;
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+#blog .blog .left .text p {
+  font-size: 12px;
+  margin: 5px;
 }
-#contact footer .link img {
-  width: 30px;
-  height: 30px;
+#blog .blog .left .text p span {
+  display: none;
+}
+#blog .blog .left .text div {
+  font-size: 12px;
+  color: #282eff;
+}
+#blog .blog .right {
+  flex-direction: row-reverse;
+}
+#blog .blog .right figure {
+  margin: 0;
+  padding: 0;
+}
+#blog .blog .right figure img {
+  width: 150px;
+  height: 150px;
+}
+#blog .blog .right .text {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 0 10px;
+}
+#blog .blog .right .text h2 {
+  font-size: 14px;
+}
+#blog .blog .right .text p {
+  font-size: 12px;
+  margin: 5px;
+}
+#blog .blog .right .text p span {
+  display: none;
+}
+#blog .blog .right .text div {
+  font-size: 12px;
+  color: #282eff;
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
