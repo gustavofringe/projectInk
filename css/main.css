@@ -507,13 +507,27 @@ footer .link img {
 *start blog page
 ===============================================================*/
 #blog .blog {
+  /*
+  *size of container
+  *
+  */
   margin-top: 25px;
   padding: 0 10px 0 10px;
 }
 #blog .blog .left, #blog .blog .right {
+  /*
+  *
+  *size of all section
+  */
   border-bottom: 1px solid grey;
   height: 130px;
   display: flex;
+}
+#blog .blog .left {
+  /*
+  *
+  *section with left image
+  */
 }
 #blog .blog .left figure {
   margin: 0;
@@ -543,6 +557,10 @@ footer .link img {
   color: #282eff;
 }
 #blog .blog .right {
+  /*
+  *
+  *section with right image
+  */
   flex-direction: row-reverse;
 }
 #blog .blog .right figure {
