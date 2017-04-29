@@ -56,6 +56,9 @@
     <div class="logo-home">
         <img src="../img/logo.svg" alt="" id="logo">
     </div>
+
+    <!--form-->
+
     <form>
         <div class="field is-focused">
             <label for="firstname" class="field-label">Nom</label>
@@ -75,6 +78,9 @@
         </div>
         <input type="submit" class="btn-primary">
     </form>
+
+    <!--address-->
+
     <address>
         94 rue Léon Marlot <br>
         59100 Roubaix <br>
@@ -83,11 +89,17 @@
         <br>
         Nous écrire <a href="mailto:example@example.com">ADEP</a>
     </address>
+
+    <!--google map-->
+
+    <div id="map"></div>
 </main>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zZCpLabRlisarVr9Gepq-vJmO8ErIHI&callback=initMap" async defer></script>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

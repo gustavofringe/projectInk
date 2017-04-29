@@ -349,9 +349,20 @@ main .logo-home #logo {
 *start of contact page
 *
 */
+#contact {
+  /*
+  *center title
+  */
+}
 #contact header h1 {
   text-align: center;
   font-size: 12px;
+}
+#contact main {
+  /*
+  *
+  *place logo
+  */
 }
 #contact main .logo-home {
   width: 100px;
@@ -365,10 +376,16 @@ main .logo-home #logo {
   height: 100px;
 }
 #contact main form {
+  /*
+  *start form
+  */
   padding: 25px;
   margin-top: 50px;
 }
 #contact main form .field {
+  /*
+  *size input
+  */
   position: relative;
   height: 60px;
   padding: 16px 0 8px 0;
@@ -432,6 +449,10 @@ main .logo-home #logo {
 #contact main address {
   width: 350px;
   margin: 0 auto;
+}
+#contact main #map {
+  width: 375px;
+  height: 375px;
 }
 
 /*# sourceMappingURL=main.css.map */
