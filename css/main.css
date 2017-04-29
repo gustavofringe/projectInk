@@ -1,29 +1,25 @@
-/*!*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ *!
-
-!*
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
- *!
-
-!* ==========================================================================
+ */
+/* ==========================================================================
    Base styles: opinionated defaults
-   ========================================================================== *!
-
+   ========================================================================== */
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
 
-!*
+/*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
- *!
-
+ */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -34,10 +30,9 @@ html {
   text-shadow: none;
 }
 
-!*
+/*
  * A better looking default horizontal rule
- *!
-
+ */
 hr {
   display: block;
   height: 1px;
@@ -47,12 +42,11 @@ hr {
   padding: 0;
 }
 
-!*
+/*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
- *!
-
+ */
 audio,
 canvas,
 iframe,
@@ -62,28 +56,25 @@ video {
   vertical-align: middle;
 }
 
-!*
+/*
  * Remove default fieldset styles.
- *!
-
+ */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-!*
+/*
  * Allow only vertical resizing of textareas.
- *!
-
+ */
 textarea {
   resize: vertical;
 }
 
-!* ==========================================================================
+/* ==========================================================================
    Browser Upgrade Prompt
-   ========================================================================== *!
-
+   ========================================================================== */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -91,27 +82,23 @@ textarea {
   padding: 0.2em 0;
 }
 
-!* ==========================================================================
+/* ==========================================================================
    Author's custom styles
-   ========================================================================== *!
-
-!* ==========================================================================
+   ========================================================================== */
+/* ==========================================================================
    Helper classes
-   ========================================================================== *!
-
-!*
+   ========================================================================== */
+/*
  * Hide visually and from screen readers
- *!
-
+ */
 .hidden {
   display: none !important;
 }
 
-!*
+/*
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *!
-
+ */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -123,12 +110,11 @@ textarea {
   width: 1px;
 }
 
-!*
+/*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
- *!
-
+ */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -139,15 +125,14 @@ textarea {
   width: auto;
 }
 
-!*
+/*
  * Hide visually and from screen readers, but maintain layout
- *!
-
+ */
 .invisible {
   visibility: hidden;
 }
 
-!*
+/*
  * Clearfix: contain floats
  *
  * For modern browsers
@@ -157,41 +142,35 @@ textarea {
  *    that receive the `clearfix` class.
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
- *!
-
+ */
 .clearfix:before,
 .clearfix:after {
-  content: " "; !* 1 *!
-  display: table; !* 2 *!
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
 .clearfix:after {
   clear: both;
 }
 
-!* ==========================================================================
+/* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
-   ========================================================================== *!
-
+   ========================================================================== */
 @media only screen and (min-width: 35em) {
-  !* Style adjustments for viewports that meet the condition *!
+  /* Style adjustments for viewports that meet the condition */
 }
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  !* Style adjustments for high resolution devices *!
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
-
-!* ==========================================================================
+/* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== *!
-
+   ========================================================================== */
 @media print {
   *,
   *:before,
@@ -200,8 +179,8 @@ textarea {
   *:first-line {
     background: transparent !important;
     color: #000 !important;
-    !* Black prints faster:
-                                      http://www.sanbeiji.com/archives/953 *!
+    /* Black prints faster:
+                                      http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -219,11 +198,10 @@ textarea {
     content: " (" attr(title) ")";
   }
 
-  !*
+  /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
-   *!
-
+   */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
@@ -235,11 +213,10 @@ textarea {
     page-break-inside: avoid;
   }
 
-  !*
+  /*
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
-   *!
-
+   */
   thead {
     display: table-header-group;
   }
@@ -264,7 +241,7 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
-}*/
+}
 /*=========================================================================
     start project with default boilerplate css
     html attribute
@@ -280,35 +257,22 @@ textarea {
 
 /*
 */
-main {
-  /*
-  *logo society
-  *resize and position of logo
-  */
-}
-main .logo-home #logo {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 170px;
-  right: 0;
-}
-main #nav {
+header #nav {
   /*
   *menu hamburger
   *top right position
   *
   */
 }
-main #nav ul {
+header #nav ul {
   /*
   *disable dropdown menu
   */
 }
-main #nav ul .dropdown {
+header #nav ul .dropdown {
   display: none;
 }
-main #nav ul .dropdown {
+header #nav ul .dropdown {
   /*
   *position of dropdown
   *menu dropdown
@@ -323,20 +287,20 @@ main #nav ul .dropdown {
   border-radius: 3px;
   background-color: aliceblue;
 }
-main #nav ul .dropdown li {
+header #nav ul .dropdown li {
   list-style-type: none;
 }
-main #nav ul .dropdown li a {
+header #nav ul .dropdown li a {
   text-decoration: none;
   color: #222222;
 }
-main #nav ul .header__icon {
+header #nav ul .header__icon {
   list-style-type: none;
 }
-main #nav ul .header__icon #header__icon {
+header #nav ul .header__icon #header__icon {
   display: block;
   border-radius: 3px;
-  background-color: #222222;
+  background-color: #616161;
   width: 40px;
   height: 35px;
   cursor: pointer;
@@ -344,7 +308,7 @@ main #nav ul .header__icon #header__icon {
   top: 10px;
   right: 20px;
 }
-main #nav ul .header__icon #header__icon:after {
+header #nav ul .header__icon #header__icon:after {
   content: '';
   margin: 0 auto;
   padding: 0;
@@ -355,7 +319,7 @@ main #nav ul .header__icon #header__icon:after {
   -moz-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
   box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
 }
-main #nav ul li:hover > .dropdown {
+header #nav ul li:hover > .dropdown {
   /*
   *dropdown visible
   */
@@ -363,6 +327,111 @@ main #nav ul li:hover > .dropdown {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+main {
+  /*
+*logo society
+*resize and position of logo
+*/
+}
+main .logo-home {
+  position: absolute;
+  top: 170px;
+  right: 0;
+}
+main .logo-home #logo {
+  width: 100px;
+  height: 100px;
+}
+
+/*
+*start of contact page
+*
+*/
+#contact header h1 {
+  text-align: center;
+  font-size: 12px;
+}
+#contact main .logo-home {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#contact main .logo-home #logo {
+  width: 100px;
+  height: 100px;
+}
+#contact main form {
+  padding: 25px;
+  margin-top: 50px;
+}
+#contact main form .field {
+  position: relative;
+  height: 60px;
+  padding: 16px 0 8px 0;
+}
+#contact main form .field-label {
+  position: relative;
+  margin: 0;
+  color: #bfbfbf;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  transform: translateY(24px);
+}
+#contact main form .field-input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 8px 0;
+  line-height: 16px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+#contact main form .field::after, #contact main form .field::before {
+  content: '';
+  height: 2px;
+  width: 100%;
+  bottom: 6px;
+  left: 0;
+  position: absolute;
+  background-color: #e7e7e7;
+}
+#contact main form .field-input::after {
+  background-color: #4ba6a3;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+#contact main form .field-input::after :hover {
+  transform: scaleX(1);
+}
+#contact main form .is-focused .field-label {
+  transform: translateY(0);
+  font-size: 12px;
+  color: #4ba6a3;
+}
+#contact main form .field.is-focused:hover {
+  transform: scaleX(1);
+}
+#contact main form .btn-primary {
+  margin-top: 15px;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background: #2ECC71;
+}
+#contact main address {
+  width: 350px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
