@@ -600,6 +600,9 @@ footer .link img {
 }
 #catalog .block .floor {
   display: flex;
+  /*section:nth-child(2), section:nth-child(4){
+    display: none;
+  }*/
 }
 #catalog .block .floor section {
   margin-top: 20px;
@@ -612,26 +615,24 @@ footer .link img {
   padding: 0;
 }
 #catalog .block .floor section figcaption {
-  font-size: 13px;
+  font-size: 11px;
 }
 #catalog .block .floor section .price {
-  width: 80px;
+  /*width: 80px;*/
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   font-size: 12px;
   color: #ff4e3d;
 }
 #catalog .block .floor section img {
-  width: 75px;
-  height: 75px;
+  margin-left: 10px;
+  height: 285px;
+  background-size: cover;
 }
 #catalog .block .floor section .realisation {
   margin-left: 10px;
   display: flex;
   flex-direction: column;
-}
-#catalog .block .floor .none {
-  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
