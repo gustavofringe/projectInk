@@ -270,6 +270,12 @@ header {
 *place logo
 */
 }
+header h1 {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+  margin: 0;
+}
 header .logo-home {
   width: 100px;
   height: 100px;
@@ -379,13 +385,6 @@ footer .link img {
   width: 100%;
   margin: 0;
   padding: 0;
-  /*
-*center title
-*/
-}
-#contact header h1, #blog header h1, #catalog header h1 {
-  text-align: center;
-  font-size: 14px;
 }
 
 /*=====================================================================
@@ -505,7 +504,7 @@ footer .link img {
   *
   */
   margin-top: 25px;
-  padding: 0 10px 0 10px;
+  padding: 0;
 }
 #blog .blog .left, #blog .blog .right {
   /*
@@ -513,41 +512,38 @@ footer .link img {
   *size of all section
   */
   border-bottom: 1px solid grey;
-  height: 130px !important;
+  height: 180px;
   display: flex;
 }
-#blog .blog .left {
-  /*
-  *
-  *section with left image
-  */
-}
-#blog .blog .left figure {
+#blog .blog .left figure, #blog .blog .right figure {
   margin: 0;
   padding: 0;
 }
-#blog .blog .left figure img {
+#blog .blog .left figure img, #blog .blog .right figure img {
   width: 150px;
   height: 150px;
 }
-#blog .blog .left .text {
+#blog .blog .left .text, #blog .blog .right .text {
   display: flex;
   flex-direction: column;
   padding: 15px 0 0 10px;
 }
-#blog .blog .left .text h2 {
+#blog .blog .left .text h2, #blog .blog .right .text h2 {
+  margin: 0;
+  padding: 10px 0;
   font-size: 14px;
 }
-#blog .blog .left .text p {
+#blog .blog .left .text p, #blog .blog .right .text p {
   font-size: 12px;
   margin: 5px;
 }
-#blog .blog .left .text p span {
+#blog .blog .left .text p span, #blog .blog .right .text p span {
   display: none;
 }
-#blog .blog .left .text div {
+#blog .blog .left .text div, #blog .blog .right .text div {
   font-size: 12px;
   color: #282eff;
+  margin-bottom: 5px;
 }
 #blog .blog .right {
   /*
@@ -555,34 +551,6 @@ footer .link img {
   *section with right image
   */
   flex-direction: row-reverse;
-}
-#blog .blog .right figure {
-  margin: 0;
-  padding: 0;
-}
-#blog .blog .right figure img {
-  width: 150px;
-  height: 150px;
-}
-#blog .blog .right .text {
-  display: flex;
-  flex-direction: column;
-  padding: 15px 0 0 10px;
-}
-#blog .blog .right .text h2 {
-  font-size: 14px;
-}
-#blog .blog .right .text p {
-  font-size: 12px;
-  margin: 5px;
-}
-#blog .blog .right .text p span {
-  display: none;
-}
-#blog .blog .right .text div {
-  font-size: 12px;
-  color: #282eff;
-  margin-bottom: 5px;
 }
 
 /*==================================================================
@@ -648,9 +616,46 @@ tablet format
     background-position: right top;
   }
 
+  #home header #nav .header__icon #header__icon {
+    position: fixed;
+    left: 700px;
+    top: 25px;
+  }
+  #home header #nav .dropdown {
+    position: fixed;
+    top: 55px;
+    right: 28px;
+  }
+  #home header .logo-home {
+    position: fixed;
+    top: 100px;
+    left: 750px;
+  }
+  #home header .logo-home #logo {
+    width: 300px;
+    height: 300px;
+  }
+
   #catalog, #contact, #blog {
+    width: 80%;
+    margin: 0 auto;
     background-color: white;
     width: 75%;
+  }
+  #catalog header #nav ul .header__icon #header__icon, #contact header #nav ul .header__icon #header__icon, #blog header #nav ul .header__icon #header__icon {
+    position: fixed;
+    left: 600px;
+    top: 25px;
+  }
+  #catalog header #nav ul .dropdown, #contact header #nav ul .dropdown, #blog header #nav ul .dropdown {
+    position: fixed;
+    right: 150px;
+    top: 60px;
+  }
+  #catalog header .logo-home #logo, #contact header .logo-home #logo, #blog header .logo-home #logo {
+    position: fixed;
+    left: 150px;
+    top: 10px;
   }
 
   /*=========================================================
@@ -679,22 +684,52 @@ contact page
 /*===================================================================
 blog page
 =====================================================================*/
-#blog, #contact, #catalog {
-  width: 80%;
-  margin: 0 auto;
-}
-
 #blog .blog {
   margin-top: 100px;
 }
-#blog .blog .left, #blog .blog .right {
-  height: 200px;
-}
 #blog .blog .left .text p span, #blog .blog .right .text p span {
-  display: block;
+  /*display: block;*/
 }
 
+/*=======================================================================
+tablet
+=========================================================================*/
 @media (min-width: 1024px) {
+  #home header #nav ul .header__icon #header__icon {
+    position: fixed;
+    left: 893px;
+  }
+  #home header .logo-home {
+    position: fixed;
+    left: 200px;
+  }
+  #home header .logo-home #logo {
+    width: 300px;
+    height: 300px;
+  }
+
+  #catalog, #contact, #blog {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    width: 75%;
+  }
+  #catalog header #nav ul .header__icon #header__icon, #contact header #nav ul .header__icon #header__icon, #blog header #nav ul .header__icon #header__icon {
+    position: fixed;
+    left: 830px;
+    top: 25px;
+  }
+  #catalog header #nav ul .dropdown, #contact header #nav ul .dropdown, #blog header #nav ul .dropdown {
+    position: fixed;
+    right: 150px;
+    top: 60px;
+  }
+  #catalog header .logo-home #logo, #contact header .logo-home #logo, #blog header .logo-home #logo {
+    position: fixed;
+    left: 150px;
+    top: 10px;
+  }
+
   /*==============================================================
 contact page
 =================================================================*/
@@ -723,17 +758,6 @@ contact page
     display: block !important;
   }
 
-  /*#home{
-    .logo-home{
-      position: absolute;
-      top: 80px;
-      left: 80px;
-      #logo{
-        width: 300px;
-        height: 300px;
-      }
-    }
-  }*/
   /*====================================================================
   catalog page
   ========================================================================*/
@@ -804,16 +828,16 @@ desktop format
     background-color: white;
     background-size: cover;
   }
+  #catalog header h1, #blog header h1, #contact header h1 {
+    padding-top: 50px;
+    font-size: 35px;
+  }
   #catalog header .logo-home #logo, #blog header .logo-home #logo, #contact header .logo-home #logo {
     position: fixed;
     top: 20px;
     left: 300px;
     width: 100px;
     height: 100px;
-  }
-  #catalog header h1, #blog header h1, #contact header h1 {
-    text-align: center;
-    font-size: 20px;
   }
   #catalog header #nav ul #header__icon, #blog header #nav ul #header__icon, #contact header #nav ul #header__icon {
     display: none;
@@ -832,13 +856,27 @@ desktop format
     color: black;
   }
 
-  /*==============================================================
-  blog page
-  =================================================================*/
-  #blog main .blog .left .text p span, #blog main .blog .right .text p span {
-    display: block;
-  }
-
+  /*  !*==============================================================
+    blog page
+    =================================================================*!
+    #blog {
+      main {
+        .blog {
+          .left, .right {
+            .text {
+              p {
+                !*span {
+                  display: block;
+                }*!
+              }
+            }
+          }
+        }
+      }
+    }*/
+  /*=====================================================================
+  contact page
+  ========================================================================*/
   #contact main form {
     width: 450px;
     margin-left: 25px;
