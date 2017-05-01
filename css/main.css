@@ -248,15 +248,40 @@ textarea {
 ===========================================================================*/
 /*
 */
-.wall {
+#home {
   background: url(../img/wall.jpg) no-repeat top fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: right top;
 }
+#home .logo-home #logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 250px;
+  right: 25px;
+}
 
 /*
 */
+header {
+  /*
+*
+*place logo
+*/
+}
+header .logo-home {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+header .logo-home #logo {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+}
 header #nav {
   /*
   *menu hamburger
@@ -277,16 +302,16 @@ header #nav ul .dropdown {
   *position of dropdown
   *menu dropdown
   **/
-  position: absolute;
+  position: fixed;
   top: 40px;
-  right: 20px;
+  right: 50px;
   margin: 0;
   padding: 0;
   width: 80px;
   height: 100px;
   border-radius: 3px;
   background-color: aliceblue;
-  z-index: 3;
+  z-index: 60;
 }
 header #nav ul .dropdown li {
   list-style-type: none;
@@ -307,7 +332,7 @@ header #nav ul .header__icon #header__icon {
   cursor: pointer;
   position: fixed;
   top: 10px;
-  right: 20px;
+  left: 286px;
 }
 header #nav ul .header__icon #header__icon:after {
   content: '';
@@ -328,23 +353,6 @@ header #nav ul li:hover > ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-
-#home {
-  /*
-*logo society
-*resize and position of logo
-*/
-}
-#home .logo-home {
-  position: fixed;
-  top: 250px;
-  right: 0;
-}
-#home .logo-home #logo {
-  position: fixed;
-  width: 100px;
-  height: 100px;
 }
 
 /*===================================================
@@ -368,43 +376,25 @@ footer .link img {
 *header for contact blog & catalog
 =====================================================================*/
 #contact, #blog, #catalog {
-  background: white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   /*
 *center title
 */
 }
 #contact header h1, #blog header h1, #catalog header h1 {
-  position: fixed;
-  margin-left: 30%;
-  font-size: 15px;
-}
-#contact main, #blog main, #catalog main {
-  /*
-  *
-  *place logo
-  */
-}
-#contact main .logo-home, #blog main .logo-home, #catalog main .logo-home {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#contact main .logo-home #logo, #blog main .logo-home #logo, #catalog main .logo-home #logo {
-  position: fixed;
-  width: 100px;
-  height: 100px;
+  text-align: center;
+  font-size: 14px;
 }
 
 /*=====================================================================
 *start of contact page
 *
 *=====================================================================*/
+#contact main {
+  margin-top: 100px;
+}
 #contact main form {
   /*
   *start form
@@ -553,7 +543,7 @@ footer .link img {
   margin: 5px;
 }
 #blog .blog .left .text p span {
-  display: none !important;
+  display: none;
 }
 #blog .blog .left .text div {
   font-size: 12px;
@@ -598,8 +588,13 @@ footer .link img {
 /*==================================================================
 ##################### catalog page
 ======================================================================*/
+#catalog {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
 #catalog .block {
-  margin-top: 65px;
+  margin: 50px 0 0 0;
 }
 #catalog .block .floor {
   display: flex;
@@ -634,7 +629,7 @@ footer .link img {
   background-size: cover;
 }
 #catalog .block .floor section .realisation {
-  margin-left: 10px;
+  margin-left: 5px;
   display: flex;
   flex-direction: column;
 }
@@ -646,6 +641,18 @@ footer .link img {
 tablet format
 ==========================================================*/
 @media (min-width: 768px) {
+  .wall {
+    background: url(../img/wall.jpg) no-repeat top fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: right top;
+  }
+
+  #catalog, #contact, #blog {
+    background-color: white;
+    width: 75%;
+  }
+
   /*=========================================================
   catalog page
   ==========================================================*/
@@ -665,7 +672,7 @@ contact page
   margin: 0 auto;
 }
 #contact main #map {
-  width: 750px;
+  width: 350px;
   margin: 0 auto;
 }
 
@@ -675,11 +682,6 @@ blog page
 #blog, #contact, #catalog {
   width: 80%;
   margin: 0 auto;
-}
-#blog header #nav ul #header__icon, #blog header #nav ul .header__icon, #contact header #nav ul #header__icon, #contact header #nav ul .header__icon, #catalog header #nav ul #header__icon, #catalog header #nav ul .header__icon {
-  position: fixed;
-  top: 10px;
-  right: 170px;
 }
 
 #blog .blog {
@@ -721,29 +723,34 @@ contact page
     display: block !important;
   }
 
-  #home .logo-home {
-    position: absolute;
-    top: 80px;
-    left: 80px;
-  }
-  #home .logo-home #logo {
-    width: 300px;
-    height: 300px;
-  }
-
+  /*#home{
+    .logo-home{
+      position: absolute;
+      top: 80px;
+      left: 80px;
+      #logo{
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }*/
+  /*====================================================================
+  catalog page
+  ========================================================================*/
   #catalog {
     width: 70%;
+    margin: 0 auto;
   }
-  #catalog .block .floor {
+  #catalog main .block .floor {
     height: 180px;
   }
-  #catalog .block .floor .medium {
+  #catalog main .block .floor .medium {
     width: 280px;
   }
-  #catalog .block .floor .large {
+  #catalog main .block .floor .large {
     width: 280px;
   }
-  #catalog .block .floor section img {
+  #catalog main .block .floor section img {
     height: 125px;
     background: cover;
   }
@@ -752,6 +759,28 @@ contact page
 desktop format
 ==============================================================*/
 @media (min-width: 1280px) {
+  .wall {
+    background: url(../img/wall.jpg) no-repeat top fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: right top;
+  }
+
+  #home {
+    /*
+    *logo society
+    *resize and position of logo
+    */
+  }
+  #home .logo-home {
+    position: absolute;
+    top: 0;
+    left: 600px;
+  }
+  #home .logo-home #logo {
+    width: 500px;
+    height: 500px;
+  }
   #home header #nav ul #header__icon {
     display: none;
   }
@@ -768,15 +797,30 @@ desktop format
     color: white;
   }
 
+  #catalog, #blog, #contact {
+    width: 70%;
+    height: 100%;
+    margin: -17px auto;
+    background-color: white;
+    background-size: cover;
+  }
+  #catalog header .logo-home #logo, #blog header .logo-home #logo, #contact header .logo-home #logo {
+    position: fixed;
+    top: 20px;
+    left: 300px;
+    width: 100px;
+    height: 100px;
+  }
   #catalog header h1, #blog header h1, #contact header h1 {
-    margin-left: 35%;
+    text-align: center;
     font-size: 20px;
   }
   #catalog header #nav ul #header__icon, #blog header #nav ul #header__icon, #contact header #nav ul #header__icon {
     display: none;
   }
   #catalog header #nav ul .header__icon .dropdown, #blog header #nav ul .header__icon .dropdown, #contact header #nav ul .header__icon .dropdown {
-    width: 250px;
+    right: 200px;
+    width: 300px;
     display: inline-block;
     background: transparent;
   }
@@ -788,8 +832,11 @@ desktop format
     color: black;
   }
 
+  /*==============================================================
+  blog page
+  =================================================================*/
   #blog main .blog .left .text p span, #blog main .blog .right .text p span {
-    display: block !important;
+    display: block;
   }
 
   #contact main form {
@@ -811,6 +858,9 @@ desktop format
     height: 600px;
   }
 
+  /*================================================================
+  catalog page
+  ===================================================================*/
   #catalog main {
     margin-top: 80px;
   }
