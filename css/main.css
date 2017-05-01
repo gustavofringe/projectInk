@@ -305,7 +305,7 @@ header #nav ul .header__icon #header__icon {
   width: 40px;
   height: 30px;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 20px;
 }
@@ -320,7 +320,7 @@ header #nav ul .header__icon #header__icon:after {
   -moz-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
   box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
 }
-header #nav ul li:hover > .dropdown {
+header #nav ul li:hover > ul {
   /*
   *dropdown visible
   */
@@ -337,11 +337,12 @@ header #nav ul li:hover > .dropdown {
 */
 }
 #home .logo-home {
-  position: absolute;
+  position: fixed;
   top: 250px;
   right: 0;
 }
 #home .logo-home #logo {
+  position: fixed;
   width: 100px;
   height: 100px;
 }
@@ -377,7 +378,8 @@ footer .link img {
 */
 }
 #contact header h1, #blog header h1, #catalog header h1 {
-  text-align: center;
+  position: fixed;
+  margin-left: 30%;
   font-size: 15px;
 }
 #contact main, #blog main, #catalog main {
@@ -394,6 +396,7 @@ footer .link img {
   left: 0;
 }
 #contact main .logo-home #logo, #blog main .logo-home #logo, #catalog main .logo-home #logo {
+  position: fixed;
   width: 100px;
   height: 100px;
 }
@@ -520,7 +523,7 @@ footer .link img {
   *size of all section
   */
   border-bottom: 1px solid grey;
-  height: 130px;
+  height: 130px !important;
   display: flex;
 }
 #blog .blog .left {
@@ -550,7 +553,7 @@ footer .link img {
   margin: 5px;
 }
 #blog .blog .left .text p span {
-  display: none;
+  display: none !important;
 }
 #blog .blog .left .text div {
   font-size: 12px;
@@ -666,6 +669,29 @@ contact page
   margin: 0 auto;
 }
 
+/*===================================================================
+blog page
+=====================================================================*/
+#blog, #contact, #catalog {
+  width: 80%;
+  margin: 0 auto;
+}
+#blog header #nav ul #header__icon, #blog header #nav ul .header__icon, #contact header #nav ul #header__icon, #contact header #nav ul .header__icon, #catalog header #nav ul #header__icon, #catalog header #nav ul .header__icon {
+  position: fixed;
+  top: 10px;
+  right: 170px;
+}
+
+#blog .blog {
+  margin-top: 100px;
+}
+#blog .blog .left, #blog .blog .right {
+  height: 200px;
+}
+#blog .blog .left .text p span, #blog .blog .right .text p span {
+  display: block;
+}
+
 @media (min-width: 1024px) {
   /*==============================================================
 contact page
@@ -720,6 +746,80 @@ contact page
   #catalog .block .floor section img {
     height: 125px;
     background: cover;
+  }
+}
+/*============================================================
+desktop format
+==============================================================*/
+@media (min-width: 1280px) {
+  #home header #nav ul #header__icon {
+    display: none;
+  }
+  #home header #nav ul .header__icon .dropdown {
+    width: 400px;
+    display: inline-block;
+    background: transparent;
+  }
+  #home header #nav ul .header__icon .dropdown li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  #home header #nav ul .header__icon .dropdown li a {
+    color: white;
+  }
+
+  #catalog header h1, #blog header h1, #contact header h1 {
+    margin-left: 35%;
+    font-size: 20px;
+  }
+  #catalog header #nav ul #header__icon, #blog header #nav ul #header__icon, #contact header #nav ul #header__icon {
+    display: none;
+  }
+  #catalog header #nav ul .header__icon .dropdown, #blog header #nav ul .header__icon .dropdown, #contact header #nav ul .header__icon .dropdown {
+    width: 250px;
+    display: inline-block;
+    background: transparent;
+  }
+  #catalog header #nav ul .header__icon .dropdown li, #blog header #nav ul .header__icon .dropdown li, #contact header #nav ul .header__icon .dropdown li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  #catalog header #nav ul .header__icon .dropdown li a, #blog header #nav ul .header__icon .dropdown li a, #contact header #nav ul .header__icon .dropdown li a {
+    color: black;
+  }
+
+  #blog main .blog .left .text p span, #blog main .blog .right .text p span {
+    display: block !important;
+  }
+
+  #contact main form {
+    width: 450px;
+    margin-left: 25px;
+  }
+  #contact main form .field {
+    margin-top: 50px;
+  }
+  #contact main #address {
+    margin-top: 50px;
+    height: 800px;
+  }
+  #contact main #address address {
+    width: 500px;
+  }
+  #contact main #address #map {
+    width: 500px;
+    height: 600px;
+  }
+
+  #catalog main {
+    margin-top: 80px;
+  }
+  #catalog main .block .floor section:nth-child(4) {
+    display: flex;
+  }
+
+  footer .link {
+    margin: 0;
   }
 }
 
