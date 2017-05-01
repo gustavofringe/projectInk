@@ -330,18 +330,18 @@ header #nav ul li:hover > .dropdown {
   align-items: center;
 }
 
-main {
+#home {
   /*
 *logo society
 *resize and position of logo
 */
 }
-main .logo-home {
+#home .logo-home {
   position: absolute;
-  top: 200px;
+  top: 250px;
   right: 0;
 }
-main .logo-home #logo {
+#home .logo-home #logo {
   width: 100px;
   height: 100px;
 }
@@ -601,6 +601,9 @@ footer .link img {
 #catalog .block .floor {
   display: flex;
 }
+#catalog .block .floor .large {
+  width: 208px;
+}
 #catalog .block .floor section {
   width: 150px;
   margin-top: 20px;
@@ -634,6 +637,90 @@ footer .link img {
 }
 #catalog .block .floor section:nth-child(3), #catalog .block .floor section:nth-child(4) {
   display: none;
+}
+
+/*=========================================================
+tablet format
+==========================================================*/
+@media (min-width: 768px) {
+  /*=========================================================
+  catalog page
+  ==========================================================*/
+  #catalog {
+    width: 75%;
+    margin: 0 auto;
+  }
+  #catalog .block .floor section:nth-child(3) {
+    display: flex;
+  }
+}
+/*==============================================================
+contact page
+=================================================================*/
+#contact main address {
+  width: 400px;
+  margin: 0 auto;
+}
+#contact main #map {
+  width: 750px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  /*==============================================================
+contact page
+=================================================================*/
+  #contact {
+    width: 75%;
+    margin: 0 auto;
+  }
+  #contact main {
+    display: flex;
+  }
+  #contact main form {
+    margin-top: 150px;
+    width: 300px;
+  }
+  #contact main #map {
+    margin-top: 70px;
+    width: 400px;
+  }
+  #contact main address {
+    width: 300px;
+    font-size: 14px;
+  }
+  #contact main #address {
+    padding-top: 100px;
+    height: 600px;
+    display: block !important;
+  }
+
+  #home .logo-home {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+  }
+  #home .logo-home #logo {
+    width: 300px;
+    height: 300px;
+  }
+
+  #catalog {
+    width: 70%;
+  }
+  #catalog .block .floor {
+    height: 180px;
+  }
+  #catalog .block .floor .medium {
+    width: 280px;
+  }
+  #catalog .block .floor .large {
+    width: 280px;
+  }
+  #catalog .block .floor section img {
+    height: 125px;
+    background: cover;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
