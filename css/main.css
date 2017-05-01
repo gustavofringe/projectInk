@@ -600,11 +600,9 @@ footer .link img {
 }
 #catalog .block .floor {
   display: flex;
-  /*section:nth-child(2), section:nth-child(4){
-    display: none;
-  }*/
 }
 #catalog .block .floor section {
+  width: 150px;
   margin-top: 20px;
   display: flex;
   align-self: auto;
@@ -614,7 +612,7 @@ footer .link img {
   margin: 0;
   padding: 0;
 }
-#catalog .block .floor section figcaption {
+#catalog .block .floor section p {
   font-size: 11px;
 }
 #catalog .block .floor section .price {
@@ -626,13 +624,16 @@ footer .link img {
 }
 #catalog .block .floor section img {
   margin-left: 10px;
-  height: 285px;
+  height: 100px;
   background-size: cover;
 }
 #catalog .block .floor section .realisation {
   margin-left: 10px;
   display: flex;
   flex-direction: column;
+}
+#catalog .block .floor section:nth-child(3), #catalog .block .floor section:nth-child(4) {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
