@@ -279,12 +279,11 @@ header h1 {
 header .logo-home {
   width: 100px;
   height: 100px;
-  position: absolute;
-  top: 0;
-  left: 10px;
 }
 header .logo-home #logo {
-  position: fixed;
+  position: absolute;
+  top: 210px;
+  right: 10px;
   width: 100px;
   height: 100px;
 }
@@ -636,6 +635,9 @@ tablet format
     height: 300px;
   }
 
+  /*=======================================================================
+  default setting tablet for blog, contact, catalog
+  =======================================================================*/
   #catalog, #contact, #blog {
     width: 80%;
     margin: 0 auto;
@@ -692,7 +694,7 @@ blog page
 }
 
 /*=======================================================================
-tablet
+tablet reverse
 =========================================================================*/
 @media (min-width: 1024px) {
   #home header #nav ul .header__icon #header__icon {
@@ -708,6 +710,9 @@ tablet
     height: 300px;
   }
 
+  /*==========================================================================
+  default setting for catalog, contact, blog
+  ===========================================================================*/
   #catalog, #contact, #blog {
     width: 80%;
     margin: 0 auto;
@@ -821,6 +826,9 @@ desktop format
     color: white;
   }
 
+  /*=========================================================================
+  default setting for catalog, blog & contact
+  ==========================================================================*/
   #catalog, #blog, #contact {
     width: 70%;
     height: 100%;
