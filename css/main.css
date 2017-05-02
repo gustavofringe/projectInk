@@ -802,7 +802,7 @@ desktop format
 */
   }
   #home header .logo-home {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 600px;
   }
@@ -836,13 +836,26 @@ desktop format
     background-color: white;
     background-size: cover;
   }
+  #catalog header, #blog header, #contact header {
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("../img/menu.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
   #catalog header h1, #blog header h1, #contact header h1 {
-    padding-top: 50px;
     font-size: 35px;
   }
   #catalog header .logo-home #logo, #blog header .logo-home #logo, #contact header .logo-home #logo {
     position: fixed;
-    top: 20px;
+    top: 15px;
     left: 300px;
     width: 100px;
     height: 100px;
@@ -861,12 +874,15 @@ desktop format
     margin-left: 20px;
   }
   #catalog header #nav ul .header__icon .dropdown li a, #blog header #nav ul .header__icon .dropdown li a, #contact header #nav ul .header__icon .dropdown li a {
-    color: black;
+    color: white;
   }
 
   /*==============================================================
   blog page
   =================================================================*/
+  #blog main .blog {
+    padding-top: 80px;
+  }
   #blog main .blog .left figure img, #blog main .blog .right figure img {
     margin: 10px;
   }
@@ -903,7 +919,10 @@ desktop format
   catalog page
   ===================================================================*/
   #catalog main {
-    margin-top: 80px;
+    margin-top: 100px;
+  }
+  #catalog main .block {
+    padding-top: 50px;
   }
   #catalog main .block .floor section:nth-child(4) {
     display: flex;
