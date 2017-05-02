@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js wall" lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Simplon Tatoo Studio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon.ico"/>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body id="contact">
+
+
+<header>
+
+    <!--logo society-->
+
+    <div class="logo-home">
+        <img src="../img/logo.svg" alt="" id="logo">
+    </div>
+    <!--dropdownmenu-->
+
+    <h1>Nous Contactez</h1>
+    <nav id="nav">
+        <ul>
+            <!--hamburger icon-->
+            <li class="header__icon"><a href="#" id="header__icon"></a>
+
+                <!--dropdown menu-->
+
+                <ul class="dropdown">
+                    <li><a href="../index.html">Acceuil</a></li>
+                    <li><a href="catalog.html">Gallerie</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+</header>
+
+<main>
+    <!--form-->
+
+    <form>
+        <div class="field is-focused">
+            <label for="firstname" class="field-label">Nom</label>
+            <input type="text" id="firstname" class="field-input">
+        </div>
+        <div class="field is-focused">
+            <label for="lastname" class="field-label">Prénom</label>
+            <input type="text" id="lastname" class="field-input">
+        </div>
+        <div class="field is-focused">
+            <label for="email" class="field-label">E-mail</label>
+            <input type="email" id="email" class="field-input">
+        </div>
+        <div class="field is-focused">
+            <label for="phone" class="field-label">Téléphone</label>
+            <input type="tel" id="phone" class="field-input">
+        </div>
+        <input type="submit" class="btn-primary">
+    </form>
+
+    <!--address-->
+
+    <div id="address">
+        <address>
+            94 rue Léon Marlot <br>
+            59100 Roubaix <br>
+            Tél : 03.20.02.79.68 <br>
+            Secrétariat ouvert tous les jours de 10 à 12h et de 14h à 17h (fermé le Jeudi Matin, Vendredi après-midi et
+            samedi).
+            <br>
+            Nous écrire :<a href="mailto:example@example.com">ADEP</a>
+        </address>
+
+        <!--google map-->
+
+        <div id="map"></div>
+    </div>
+    <!-- /.address -->
+</main>
+
+<!--footer-->
+<footer>
+    <h2>Nous suivre</h2>
+    <div class="link">
+        <a href="https://www.facebook.com/adeproubaix/"><img src="../img/Facebook.svg" alt="lien facebook"></a>
+        <a href="https://twitter.com/adeproubaix?lang=fr"><img src="../img/twitter.svg" alt="lien twitter"></a>
+
+        <a href="https://plus.google.com/share?url=http://simplon.co/roubaix/"><img src="../img/googleplus.svg"
+                                                                                    alt="lien google+"></a>
+
+        <img src="../img/instagram.svg" alt="lien instagram">
+    </div>
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zZCpLabRlisarVr9Gepq-vJmO8ErIHI&callback=initMap" async
+        defer></script>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
