@@ -790,18 +790,18 @@ desktop format
     background-position: right top;
   }
 
-  #home {
-    /*
-    *logo society
-    *resize and position of logo
-    */
+  #home header {
+      /*
+*logo society
+*resize and position of logo
+*/
   }
-  #home .logo-home {
+  #home header .logo-home {
     position: absolute;
     top: 0;
     left: 600px;
   }
-  #home .logo-home #logo {
+  #home header .logo-home #logo {
     width: 500px;
     height: 500px;
   }
@@ -856,24 +856,19 @@ desktop format
     color: black;
   }
 
-  /*  !*==============================================================
-    blog page
-    =================================================================*!
-    #blog {
-      main {
-        .blog {
-          .left, .right {
-            .text {
-              p {
-                !*span {
-                  display: block;
-                }*!
-              }
-            }
-          }
-        }
-      }
-    }*/
+  /*==============================================================
+  blog page
+  =================================================================*/
+  #blog main .blog .left figure img, #blog main .blog .right figure img {
+    margin: 10px;
+  }
+  #blog main .blog .left .text, #blog main .blog .right .text {
+    margin-top: 10px;
+  }
+  #blog main .blog .left .text p span, #blog main .blog .right .text p span {
+    display: block;
+  }
+
   /*=====================================================================
   contact page
   ========================================================================*/
